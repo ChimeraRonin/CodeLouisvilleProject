@@ -1,16 +1,21 @@
-
-var form = document.querySelector('.form');
+const form = document.querySelector('.form');
+const reservationBtn = document.getElementById('jf-button-reservation');
+const reservationModal = document.getElementById("reservations");
+const blurModal = document.getElementById("blur-modal");
 
 form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    alert("See you then!");
-    console.log(event);
-    closeModal()
+  event.preventDefault();
+  alert("See you then!");
+  console.log(event);
+  closeModal()
 });
+
+// Begin Modal Window for Reservations //
+reservationBtn.addEventListener('click', openModal)
 
 
 // Begin Slideshow //
-var slideIndex = 0;
+let slideIndex = 0;
 showSlides();
 
 function showSlides() {
@@ -25,24 +30,18 @@ function showSlides() {
 }
 
 setInterval(showSlides, 5000)
-
 // End Slideshow //
 
-// Begin Modal Window for Reservations //
 
 function openModal() {
-  var reservationModal = document.getElementById("reservations");
   reservationModal.classList.add("jf-modal-container-show");
-  var blurModal = document.getElementById("blur-modal");
   blurModal.classList.add("blur-show");
 }
 
 function closeModal() {
-  var reservationModal = document.getElementById("reservations");
   reservationModal.classList.remove("jf-modal-container-show");
-  var blurModal = document.getElementById("blur-modal");
   blurModal.classList.remove("blur-show");
 }
 
-// End Modal Window for Reservations //
+// End Modal Window for Reservations //```
 

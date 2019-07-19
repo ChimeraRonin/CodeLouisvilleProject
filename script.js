@@ -5,7 +5,7 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     alert("See you then!");
     console.log(event);
-    
+    closeModal()
 });
 
 

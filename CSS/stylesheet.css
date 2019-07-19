@@ -1,0 +1,205 @@
+
+
+
+
+
+.loc-margins {
+ margin-top: 80px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+/* Reservations Form */
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+
+.hours {
+    float: left;
+    width: 30%;
+    justify-content: center;
+} */
+
+
+
+
+
+.jf-modal-container {
+  display: none;
+  position: fixed;  
+  /* width: 90%; */
+  left: 50vw;
+  top: 50vh;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 10;
+}
+
+
+.jf-modal-container-show {
+  display: block;
+}
+
+.blur-show {
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
+  z-index:8;
+}
+
+
+
+.form {
+   background-color: rgba(220, 220, 220, .5)
+}
+
+
+
+
+
+  form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+  }
+
+  /* Menu Formatting */
+
+.menutextul {
+    list-style-type: none;
+    justify-content: center;
+    font-family: Florence;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+
+}
+
+.menutext {
+    list-style-type: none;
+    justify-content: center;
+    font-family: Helvetica;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Footer Formatting */
+
+.footer {
+    background-color:#778899;
+    height: 35px;
+    text-align: center;
+    margin-top: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+  
+
+

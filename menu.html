@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Locations</title>
+          <link rel="stylesheet" href="css/normalize.css">
+          <link rel="stylesheet" href="css/normalize.css">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+          <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+    <body background="Images/chopboard.jpg">
+            <a name="top"></a>
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container">
+                <a class="navbar-brand" href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="menu.html">Menu<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="locations.html">Locations</a>
+                    </li>
+                  
+                    <li><button id="jf-button-reservation" type="button" class="btn btn-danger" onclick="openModal()">Reservations</button></li> 
+          
+                  </ul>
+                </div>
+              </div>
+              </nav>
+           
+    </div>
+    <div class="menutext">
+
+      <h1>Menu</h1>
+      
+      <h2>Appetizers</h2>
+
+      <ul class="menutextul">
+          <li>Tasty Appetizer 1</li>
+          <li>Tasty Appetizer 2</li> 
+          <li>Tasty Appetizer 3</li> 
+          <li>Tasty Appetizer 4</li> 
+          <li>Tasty Appetizer 5</li> 
+          <li>Tasty Appetizer 6</li> 
+
+      </ul>
+      
+      <h2>Salads</h2>
+
+      <ul class="menutextul">
+              <li>Flavorless Salad</li>
+              <li> Basically Grass Salad</li>
+              <li>Fancy Salad With a Gross Cheese</li>
+              <li>Plain Salad</li>
+        
+          </ul>
+
+      <h2>Entrees</h2>
+
+      <ul class="menutextul"> 
+
+          <li>Beef Entree 1</li>
+          <li>Beef Entree 2</li>
+          <li>Beef Entree 3</li>
+          <li>Chicken Entree 1</li>
+          <li>Chicken Entree 2</li>
+          <li>Chicken Entree 3</li>
+          <li>Pasta Entree 1</li>
+          <li>Pasta Entree 2</li>
+          <li>Seafood Entree 1</li>
+          <li>Seafood Entree 2</li>
+          <li>Seafood Entree 3</li>
+          <li>Chef's Special 1</li>
+          <li>Chef's Special 2</li>
+
+      </ul>
+
+      <h2>Desserts</h2>
+
+      <ul class="menutextul">
+          
+          <li>Dessert 1</li>
+          <li>Dessert 2</li>
+          <li>Dessert 3</li>
+          <li>Dessert 4</li>
+          <li>Dessert 5</li>
+          <li>Dessert 6</li>
+
+      </ul>
+      
+      <p class=>*Wine and spirits differ by location. Ask your server for a menu of all our premium selections.</p>
+</div>
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="Reservations">
+    Launch demo modal
+  </button> -->
+
+<!-- Modal -->
+<div class="jf-modal-container" id="reservations" tabindex="-1" role="dialog" aria-labelledby="reservations" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Reservations</h5>
+          <button id="close-modal" type="button" onclick="closeModal()" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <!-- Form Fields Begin -->
+         
+          <form class="form" action="index.html" method="post">
+            <h3>Reservations</h3>
+                <label for="location">Location:</label> 
+                <select id="location" required> <br>
+                    <option value="">Please choose an option:</option>
+                        <option value="Louisville">Louisville</option>
+                        <option value="Nashville">Nashville</option>
+                        <option value="Cincinnati">Cincinnati</option>
+                
+                </select> <br>
+                
+                <label for="party_size">Party Size:</label>
+                <select id="party_size" required>
+                    <option value=""></option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select> <br>
+            
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required><br>
+            
+                <label for="time">Preferred Time</label>
+                <select id="time" required>
+                    <option value=""></option>
+                    <option value="4:00">4:00</option>
+                    <option value="5:00">5:00</option>
+                    <option value="6:00">6:00</option>
+                    <option value="7:00">7:00</option>
+                    <option value="8:00">8:00</option>
+                    <option value="9:00">9:00</option>
+                    <option value="10:00">10:00</option>   
+            
+            </select>
+            <br>
+            
+                <label for="occasion">Are you celebrating an event?</label>
+                <textarea id="occasion" name="occasion"></textarea>
+            
+                <button class = "myButton" type="submit">Submit</button>
+            </form>
+                <!-- Form Fields End -->
+
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+
+<script src="carscript.js"></script>
+<script src="script.js"></script>
+</body>
+
+
+<footer class="footer">
+        <p>Copyright Mama Mia's Restaurant, Inc. Thanks for visiting our site!</p>
+        
+        </footer>
+
+        <a href="#top">Top of Page</a>
+</html>
+
+

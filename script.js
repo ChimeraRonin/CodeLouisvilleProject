@@ -40,6 +40,9 @@ function openModal() {
 function closeModal() {
   var reservationModal = document.getElementById("reservations");
   reservationModal.classList.remove("jf-modal-container-show");
+  var blurModal = document.getElementById("blur-modal");
+  blurModal.classList.remove("blur-show");
 }
 
 // End Modal Window for Reservations //
+
